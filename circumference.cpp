@@ -11,9 +11,9 @@ using namespace std;
 
 double inputRadius (){  // inputs the radius of the circle
    double radius;
-   bool num = false;
-   bool notNeg = false;
-   cout << "This program calculates the circumference of a cirscle" << endl;
+   bool num = false;      // flag for input not a number
+   bool notNeg = false;   // flag for number non-negative
+   cout << "This program calculates the circumference of a circle" << endl;
    cout << "Please enter the radius of the circle desired"<< endl;
    cin >> radius;
    while (!num || !notNeg){
@@ -44,7 +44,7 @@ double inputRadius (){  // inputs the radius of the circle
 
 double calcCircumference(double r, double PI){   // calculates the circumference of the circle
    double c;
-   c = 2 * PI * r;
+   c = 2 * PI * r;   
    return c;
 }
 
